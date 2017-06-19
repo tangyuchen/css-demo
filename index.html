@@ -11,7 +11,50 @@
     <script src="./plugin/bootstrap/js/bootstrap.min.js"></script>
   </head>
   <body>
-    <h1>你好，世界！</h1>
-    
+  	<h1>我不能再小了，已经宽度小于500px了</h1>
+    <style>
+    	@media screen and (max-width:500px){
+    		body{
+    			background: red;
+    		}
+    		h1{
+    			display: block
+    		}
+
+    	}
+    	@media screen and (min-width:500px) and (max-width:800px){
+    		body{
+    			background: pink;
+    		}
+    		h1{
+    			display: none
+    		}
+    	}
+    	@media screen and (min-width:800px) and (max-width:900px){
+    		body{
+    			background: yellow;
+    		}
+
+    		h1{
+    			display: none
+    		}
+    	}
+    	@media screen and (min-width:900px) and (max-width:1200px){
+    		body{
+    			background: green;
+    		}
+			h1{
+    			display: none
+    		}
+    	}
+    	@media screen and (min-width:1200px){
+    		body{
+    			background:black;
+    		}
+    		h1{
+    			display: none
+    		}
+    	}
+    </style>
   </body>
 </html>
